@@ -51,7 +51,7 @@ fi
 
 if [ $KONG_NUM_VERSION -ge 001500 ]; then
   # use Bionic now instead of Trusty
-  KONG_DOWNLOAD_URL="https://bintray.com/kong/kong-deb/download_file?file_path=kong-${KONG_VERSION}.bionic.all.deb"
+  KONG_DOWNLOAD_URL="https://download.konghq.com/gateway-1.x-ubuntu-bionic/pool/all/k/kong/kong_${KONG_VERSION}_amd64.deb"
 
   # Let's enable transparent listening option as well
   KONG_PROXY_LISTEN="0.0.0.0:8000 transparent, 0.0.0.0:8443 transparent ssl"
@@ -62,7 +62,7 @@ fi
 
 if [ $KONG_NUM_VERSION -ge 010300 ]; then
   # use Bionic now instead of Trusty
-  KONG_DOWNLOAD_URL="https://bintray.com/kong/kong-deb/download_file?file_path=kong-${KONG_VERSION}.bionic.amd64.deb"
+  KONG_DOWNLOAD_URL="https://download.konghq.com/gateway-1.x-ubuntu-bionic/pool/all/k/kong/kong_${KONG_VERSION}_amd64.deb"
 fi
 
 if [ $KONG_NUM_VERSION -ge 020000 ]; then
